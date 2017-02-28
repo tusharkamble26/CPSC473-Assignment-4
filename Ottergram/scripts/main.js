@@ -10,6 +10,11 @@ var KEY_2 = 50;
 var KEY_3 = 51;
 var KEY_4 = 52;
 var KEY_5 = 53;
+var KEY_6 = 54;
+var KEY_7 = 55;
+var KEY_8 = 56;
+var KEY_9 = 57;
+var KEY_10 = 58;
 
 function setDetails(imageUrl, titleText) {
     // Code will go here
@@ -91,6 +96,21 @@ function addKeyPressHandler() {
         } else if (event.keyCode === KEY_5) {
             showDetails();
             setDetailsFromThumb(thumbnails[4]);
+        } else if (event.keyCode === KEY_6) {
+            showDetails();
+            setDetailsFromThumb(thumbnails[5]);
+        } else if (event.keyCode === KEY_7) {
+            showDetails();
+            setDetailsFromThumb(thumbnails[6]);
+        } else if (event.keyCode === KEY_8) {
+            showDetails();
+            setDetailsFromThumb(thumbnails[7]);
+        } else if (event.keyCode === KEY_9) {
+            showDetails();
+            setDetailsFromThumb(thumbnails[8]);
+        } else if (event.keyCode === KEY_10) {
+            showDetails();
+            setDetailsFromThumb(thumbnails[9]);
         }
     });
 }
