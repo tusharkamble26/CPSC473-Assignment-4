@@ -1,22 +1,17 @@
-function addThumbClickHandler(thumb){
-    'use strict';
-    thumb.addEventListener('click',function (event) {
+
+function addLinkClickHandler() {
+    addEventListener('click', function(event) {
         event.preventDefault();
     });
 }
 
-
-function getThumbnailsArray(){
-    'use strict';
-    var thumbnails = document.getElementsByTagName('a');
-    var thumbnailArray = [].slice.call(thumbnails);
-    return thumbnailArray;
+function getLinksArray() {
+    var anchorArr = document.querySelectorAll('a');
+    return anchorArr;
 }
 
 function initializeEvents() {
-    'use strict';
-    var thumbnails = getThumbnailsArray();
-    thumbnails.forEach(addThumbClickHandler);
+    var link = getLinksArray();
+    link.forEach(addLinkClickHandler);
 }
-
 initializeEvents();
